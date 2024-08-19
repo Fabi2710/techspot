@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de productos - TechSpot">
+    <title>Productos - TechSpot</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">TechSpot</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html" class="active">Productos</a></li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#" class="nav-link">Iniciar Sesión</a></li>
+                    <li><a href="#" class="nav-link">Registro</a></li>
+                    <li><a href="carrito.html" class="nav-link">Carrito</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="products">
+        <div class="container">
+            <h2>Nuestros Productos</h2>
+            <div class="product-grid">
+
+                <div class="product-item">
+                    <img src="images/notebook_lenovo.png" alt="Notebook Lenovo">
+                    <h3>LENOVO</h3>
+                    <p>NOTEBOOK GAMER LENOVO LOQ INTEL CORE I5 16 GB RAM 512 GB SSD NVIDIA RTX 3050 15.6"</p>
+                    <span class="price">$459.990</span>
+                    <button class="btn-add-cart" onclick="addToCart('LENOVO', 'NOTEBOOK GAMER LENOVO LOQ INTEL CORE I5 16 GB RAM 512 GB SSD NVIDIA RTX 3050 15.6', 459990)">Añadir al Carrito</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="images/hp_victus.png" alt="Notebook HP Victus">
+                    <h3>HP</h3>
+                    <p>NOTEBOOK GAMER HP VICTUS 15-FA0001LA INTEL CORE I5 16 GB RAM 512 GB SSD NVIDIA RTX 3050 15.6"</p>
+                    <span class="price">$739.990</span>
+                    <button class="btn-add-cart" onclick="addToCart('HP', 'NOTEBOOK GAMER HP VICTUS', 739990)">Añadir al Carrito</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="images/notebook_gamer_asus.png" alt="Notebook ASUS TUF F15">
+                    <h3>ASUS</h3>
+                    <p>NOTEBOOK GAMER ASUS TUF F15 FX507ZC4 INTEL CORE I5 8 GB RAM 512 GB SSD NVIDIA RTX 3050 15.6"</p>
+                    <span class="price">$679.990</span>
+                    <button class="btn-add-cart" onclick="addToCart('ASUS', 'NOTEBOOK GAMER ASUS TUF F15', 679990)">Añadir al Carrito</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="images/notebook_acer.png" alt="Notebook Acer Aspire">
+                    <h3>ACER</h3>
+                    <p>NOTEBOOK GAMER ACER ASPIRE 5 A515-58GM-56XX-1 INTEL CORE I5 16 GB RAM 512 GB SSD NVIDIA RTX 2050 15.6"</p>
+                    <span class="price">$729.990</span>
+                    <button class="btn-add-cart" onclick="addToCart('ACER', 'NOTEBOOK GAMER ACER ASPIRE 5', 729990)">Añadir al Carrito</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="images/iphone_15.png" alt="iPhone 15">
+                    <h3>APPLE</h3>
+                    <p>IPHONE 15 128 GB 12MP 6,1"</p>
+                    <span class="price">$849.990</span>
+                    <button class="btn-add-cart" onclick="addToCart('APPLE', 'IPHONE 15', 849990)">Añadir al Carrito</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="images/iphone_14.png" alt="iPhone 14">
+                    <h3>APPLE</h3>
+                    <p>IPHONE 14 128 GB 12MP 6,1"</p>
+                    <span class="price">$739.990</span>
+                    <button class="btn-add-cart" onclick="addToCart('APPLE', 'IPHONE 14', 739990)">Añadir al Carrito</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="images/Samsung_S23.png" alt="Samsung Galaxy S23 Ultra">
+                    <h3>SAMSUNG</h3>
+                    <p>CELULAR SAMSUNG GALAXY S23 ULTRA 5G 256 GB 8 GB RAM 12MP 6,8"</p>
+                    <span class="price">$849.990</span>
+                    <button class="btn-add-cart" onclick="addToCart('SAMSUNG', 'CELULAR SAMSUNG GALAXY S23 ULTRA', 849990)">Añadir al Carrito</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="images/xiaomi.png" alt="Xiaomi Redmi Note 13 Pro+">
+                    <h3>XIAOMI</h3>
+                    <p>CELULAR XIAOMI REDMI NOTE 13 PRO+ 5G 512 GB 12 GB RAM 16MP 6,6"</p>
+                    <span class="price">$459.990</span>
+                    <button class="btn-add-cart" onclick="addToCart('XIAOMI', 'CELULAR XIAOMI REDMI NOTE 13 PRO+', 459990)">Añadir al Carrito</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="images/celular_vivo.png" alt="Vivo V30">
+                    <h3>VIVO</h3>
+                    <p>CELULAR VIVO V30 512 GB 12 GB RAM 50MP 6,7"</p>
+                    <span class="price">$549.990</span>
+                    <button class="btn-add-cart" onclick="addToCart('VIVO', 'CELULAR VIVO V30', 549990)">Añadir al Carrito</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 TechSpot. Todos los derechos reservados.</p>
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
